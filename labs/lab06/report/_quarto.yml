@@ -5,15 +5,15 @@ project:
 standalone: true
 self-contained: true
 
-## Julia support
-# engine: julia
-# julia:
-#   exeflags: ["--project=../project"]
+# Julia support
+engine: julia
+julia:
+  exeflags: ["--project=../project"]
 
 ## Generic options
 lang: ru-RU
 number-sections: true
-toc: true
+toc: false
 toc-title: "Содержание"
 toc-depth: 2
 ## Crossref customization
@@ -29,7 +29,7 @@ csl: _resources/csl/gost-r-7-0-5-2008-numeric.csl
 format:
   ### Docx output format
   docx:
-    toc: true
+    toc: false
     number-sections: true
     toc-depth: 2
   ### Pdf output format
@@ -38,12 +38,12 @@ format:
     ### minted support
     # filters:
     #   - minted-quarto
-    toc: true
+    toc: false
     number-sections: true
     colorlinks: false
     toc-depth: 2
-    lof: true # List of figures
-    lot: true # List of tables
+    lof: false # List of figures
+    lot: false # List of tables
     #### Document
     documentclass: scrreprt
     papersize: a4
